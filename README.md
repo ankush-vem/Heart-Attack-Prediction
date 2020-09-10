@@ -1,3 +1,3 @@
-# Medical Imaging
+# Heart Attack Prediction
 
 ## Introduction
