@@ -10,5 +10,4 @@ Heart is one of the main organs of the human body. The blood in the human body i
 <p align="center">
   <img src="https://github.com/ankush-vem/Heart-Attack-Prediction/blob/master/Images/Heart.png">
 </p>
-![Heart Attack](https://github.com/ankush-vem/Heart-Attack-Prediction/blob/master/Images/Heart.png)
 
