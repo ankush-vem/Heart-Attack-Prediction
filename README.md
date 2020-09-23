@@ -10,6 +10,16 @@ Heart is one of the main organs of the human body. The blood in the human body i
   <img src="https://github.com/ankush-vem/Heart-Attack-Prediction/blob/master/Images/Heart.png">
 </p>
 
+In healthcare sector, which is heavily reliant on data, these data analytics can help derive an insight on the systemic waste of resources, track performance of practitioner and health of populations and identify those individuals at the risk of a chronic disease. With these information, the healthcare sector can efficiently allocate resources to maximize revenue, health of population and care for patients. There are seven ways in which data analytics is changing the way we look at the healthcare industry: 
+1. Tracking of Health
+2. Reducing Cost
+3. Assisting High-Risk Patients
+4. Preventing or reducing the Human Error
+5. Advancement in Healthcare Sector
+6. Use of Wearable Data Device to Monitor and Prevent Health Problems
+7. Improving Diagnostic Accuracy and Efficiency
+
+
 ## Technology
 **Artificial Intelligence (AI)** has made its way through the healthcare sector. The first instance when AI was used to accurately measure and scan the flow of blood is what the doctors require. AI has a knack of picking up abnormal growths better than doctors, this is primarily because of digesting and synthesizing large volumes of information. A UK based health tech firm developed an AI based device known as _**EchoGo Pro**_ to make predictions on Coronary Heart Disease (CAD) with the help of ultrasound analysis. This device generates instant results, delivering a heart disease prognosis to the hospital sites through a secure cloud based system, which has an in-built partnership with the UK National Health service based on the past records. This technology would suit clinics where the doctors can recommend the necessary treaments to improve the blood flow of the patients and the doctors at hospitals can focus more on the place where they are required the most, i.e., spending time with patients than manually checking the outcomes of every patient. 
 
