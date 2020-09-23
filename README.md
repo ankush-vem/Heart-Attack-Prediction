@@ -10,7 +10,7 @@ Heart is one of the main organs of the human body. The blood in the human body i
   <img src="https://github.com/ankush-vem/Heart-Attack-Prediction/blob/master/Images/Heart.png">
 </p>
 
-In healthcare sector, which is heavily reliant on data, these data analytics can help derive an insight on the systemic waste of resources, track performance of practitioner and health of populations and identify those individuals at the risk of a chronic disease. With these information, the healthcare sector can efficiently allocate resources to maximize revenue, health of population and care for patients. There are seven ways in which data analytics is changing the way we look at the healthcare industry: 
+In healthcare sector, which is heavily reliant on data, these data analytics can help derive an insight on the systemic waste of resources, track performance of practitioner and health of populations and identify those individuals at the risk of a chronic disease. With these information, the healthcare sector can efficiently allocate resources to maximize revenue, health of population and care for patients. There are seven ways in which data analytics has changed the way we look at the healthcare industry: 
 1. Tracking of Health
 2. Reducing Cost
 3. Assisting High-Risk Patients
