@@ -38,3 +38,4 @@ Artificial Intelligence (AI)  |  Internet of Things (IoT)
 1. Hazra, Animesh & Mandal, Subrata & Gupta, Amit & Mukherjee, Arkomita & Mukherjee, Asmita. (2017). Heart Disease Diagnosis and Prediction Using Machine Learning and Data Mining Techniques: A Review. Advances in Computational Sciences and Technology. 10. 2137-2159. 
 2. Khan, Mohammad. (2020). An IoT Framework for Heart Disease Prediction based on MDCNN Classifier. IEEE Access. PP. 1-1. 10.1109/ACCESS.2020.2974687. 
 3. Ahmed, Fizar. (2017). An Internet of Things (IoT) Application for Predicting the Quantity of Future Heart Attack Patients. International Journal of Computer Applications. 164. 36-40. 10.5120/ijca2017913773. 
+4. Wikipedia contributors. (2020, September 10). Myocardial infarction. In Wikipedia, The Free Encyclopedia. Retrieved 02:46, September 24, 2020, from https://en.wikipedia.org/w/index.php?title=Myocardial_infarction&oldid=977784693
