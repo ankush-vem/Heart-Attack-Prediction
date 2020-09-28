@@ -10,7 +10,7 @@ Heart is one of the main organs of the human body. The blood in the human body i
   <img src="https://github.com/ankush-vem/Heart-Attack-Prediction/blob/master/Images/Heart.png">
 </p>
 
-In healthcare sector, which is heavily reliant on data, these data analytics can help derive an insight on the systemic waste of resources, track performance of practitioner and health of populations and identify those individuals at the risk of a chronic disease. With these information, the healthcare sector can efficiently allocate resources to maximize revenue, health of population and care for patients. There are seven ways in which data analytics has changed the way we look at the healthcare industry: 
+In healthcare sector, which is heavily reliant on data, these data analytics can help derive an insight on the systemic waste of resources, track performance of practitioner and health of populations and identify those individuals at the risk of a chronic disease (Partners, 2019). With these information, the healthcare sector can efficiently allocate resources to maximize revenue, health of population and care for patients. There are seven ways in which data analytics has changed the way we look at the healthcare industry: 
 1. Tracking of Health
 2. Reducing Cost
 3. Assisting High-Risk Patients
@@ -39,5 +39,6 @@ Artificial Intelligence (AI)  |  Internet of Things (IoT)
 2. Khan, Mohammad. (2020). An IoT Framework for Heart Disease Prediction based on MDCNN Classifier. IEEE Access. PP. 1-1. 10.1109/ACCESS.2020.2974687. 
 3. Ahmed, Fizar. (2017). An Internet of Things (IoT) Application for Predicting the Quantity of Future Heart Attack Patients. International Journal of Computer Applications. 164. 36-40. 10.5120/ijca2017913773. 
 4. Wikipedia contributors. (2020, September 10). Myocardial infarction. In Wikipedia, The Free Encyclopedia. Retrieved from https://en.wikipedia.org/w/index.php?title=Myocardial_infarction&oldid=977784693
-5. Digital Health. 2020. Artificial Intelligence 'Predicts Fatal Heart Attacks Up To 5 Years In Advance'. [online] Available at: https://www.digitalhealth.net/2019/09/artificial-intelligence-predicts-heart-attacks.
-6. Foote, N., 2020. Artificial Intelligence Technology Developed To Predict Heart Disease. [online] euractiv. Available at: https://www.euractiv.com/section/health-consumers/news/artificial-intelligence-technology-developed-to-predict-heart-disease/.
+5. Digital Health. 2020. Artificial Intelligence 'Predicts Fatal Heart Attacks Up To 5 Years In Advance'. [online] Available at: https://www.digitalhealth.net/2019/09/artificial-intelligence-predicts-heart-attacks
+6. Foote, N., 2020. Artificial Intelligence Technology Developed To Predict Heart Disease. [online] euractiv. Available at: https://www.euractiv.com/section/health-consumers/news/artificial-intelligence-technology-developed-to-predict-heart-disease/
+7. Partners, S., 2019. Why Is Data Analytics Important In Healthcare? - Starbridge Partners. [online] Starbridge Partners. Available at: http://starbridgepartners.com/2019/10/why-is-data-analytics-important-in-healthcare/
