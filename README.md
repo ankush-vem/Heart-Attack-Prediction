@@ -32,9 +32,9 @@ Artificial Intelligence (AI)  |  Internet of Things (IoT)
 **Internet of Things (IoT)** along with a wearable monitoring device is a growing technology which is anticipated to contribute a considerable range of healthcare applications. These applications are gather the essential data, such as real time changes in health parameters which in turn updates the rigorous medical parameter's within a standard time interval (Khan, 2020). So, the IoT devices instantly produce large amount of data for healthcare. IoT devices such as Apple watch and Fitbit are wearable gadgets with an in-built sensor connect to eHealth mobile application to gather data about their health condition such as the heart rate, blood pressure, glucose level, etc. Electrocardiogram (ECG) network is a base for the entire system, which is responsible for gathering data from the body surface and transmitting these data into an IoT cloud through a wireless channel. This data is then stored and analyzed in an effective and efficient manner and has the potential to predict a storke or heart attack or any heart related disease possibly days in advance. This helps the individual to take the necessary steps or measures to either prevent or reduce the risk of facing the problem (Ahmed, 2017). 
 
 ## Achievements
-**Cleveland Clinic**
-Location: Cleveland, Ohio, United States
-Website: https://my.clevelandclinic.org
+1. **Cleveland Clinic**  
+Location: Cleveland, Ohio, United States  
+Website: https://my.clevelandclinic.org  
 
 ## Reference 
 1. Hazra, Animesh & Mandal, Subrata & Gupta, Amit & Mukherjee, Arkomita & Mukherjee, Asmita. (2017). Heart Disease Diagnosis and Prediction Using Machine Learning and Data Mining Techniques: A Review. Advances in Computational Sciences and Technology. 10. 2137-2159. 
