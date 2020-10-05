@@ -33,8 +33,8 @@ Artificial Intelligence (AI)  |  Internet of Things (IoT)
 
 ## Achievements
 1. **Cleveland Clinic**  
-Location: Cleveland, Ohio, United States  
-Website: https://my.clevelandclinic.org  
+*Location*: Cleveland, Ohio, United States  
+*Website*: https://my.clevelandclinic.org  
 
 ## Reference 
 1. Hazra, Animesh & Mandal, Subrata & Gupta, Amit & Mukherjee, Arkomita & Mukherjee, Asmita. (2017). Heart Disease Diagnosis and Prediction Using Machine Learning and Data Mining Techniques: A Review. Advances in Computational Sciences and Technology. 10. 2137-2159. 
