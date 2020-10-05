@@ -33,8 +33,13 @@ Artificial Intelligence (AI)  |  Internet of Things (IoT)
 
 ## Achievements
 1. **Cleveland Clinic**  
-*Location*: Cleveland, Ohio, United States  
-*Website*: https://my.clevelandclinic.org  
+Location: Cleveland, Ohio, United States  
+Website: https://my.clevelandclinic.org  
+
+**About**: The Cleveland Clinic is an American academic medical center based in Cleveland, Ohio. They have been consistently ranked as one of the best hospitals in the United States. Cleveland Clinic Foundation, a non-profit business established in 1921, owns and operates the Cleveland Clinic and have their campus set up in Cleveland, Ohio. They are affiliated to 11 hospitals and 19 family health centers in Northeast Ohio and hospitals in Florida and Nevada. Also, they have a Cleveland Clinic hospital in Adu Dhabi, United Arab Emirates and a sports clinic in Toronto. 
+
+**Achievement**: The Cleveland Clinic Cardiac Consult have introduced a new technology that requires the use of Machine Learning and Artificial Intelligence by collaborating with Oxford University, United Kingdom and University of Erlangen, Germany 
+
 
 ## Reference 
 1. Hazra, Animesh & Mandal, Subrata & Gupta, Amit & Mukherjee, Arkomita & Mukherjee, Asmita. (2017). Heart Disease Diagnosis and Prediction Using Machine Learning and Data Mining Techniques: A Review. Advances in Computational Sciences and Technology. 10. 2137-2159. 
