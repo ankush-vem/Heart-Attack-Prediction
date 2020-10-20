@@ -19,6 +19,10 @@ pd.options.plotting.backend='plotly'
 
 fig = None
 
+avg = df[["Age", "Target"]].groupby(['Age'], as_index=False).mean()
+fig = px.bar(x='Age', y='Target', data_frame=avg)
+
+
 app.layout = html.Div(children=[
     html.H1(children='Heart Attack Prediction'),
 
@@ -27,27 +31,8 @@ app.layout = html.Div(children=[
     '''),
     dcc.Graph(id='graph-with-slider',
               figure=fig),
-    dcc.Slider(
-        id='Age-slider',
-        min=df['Age'].min(),
-        max=df['Age'].max(),
-        value=df['Age'].min(),
-        marks={str(int): str(int) for age in df['Age'].unique()},
-        step=None
-    )
 
 ])
-
-@app.callback(
-    Output('graph-with-slider', 'figure'),
-    [Input('Age-slider', 'value')])
-
-def update_figure(selected_age):
-    df = df[df.Age == selected_age]
-
-    fig = px.bar(df, x="ChestPain", y="Age",
-                     color="Thal")
-    return fig
 
 
 if __name__ == '__main__':
