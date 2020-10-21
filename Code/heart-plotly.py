@@ -6,7 +6,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-
 from dash.dependencies import Input, Output
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -33,7 +32,6 @@ app.layout = html.Div(children=[
               figure=fig),
 
 ])
-
 
 if __name__ == '__main__':
     app.run_server(debug=True, host='127.0.0.1')
