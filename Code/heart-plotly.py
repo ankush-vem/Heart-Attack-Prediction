@@ -1,6 +1,7 @@
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
+import dash_bootstrap_components as dbc
 import plotly.express as px
 import pandas as pd
 import plotly.graph_objs as go
@@ -17,116 +18,78 @@ pd.options.plotting.backend='plotly'
 
 fig = None
 
-avg = df[["Age", "Target"]].groupby(['Age'], as_index=False).mean()
-fig = px.bar(x='Age', y='Target', data_frame=avg)
+ChestPainType = ['Asymptomatic','Nonanginal','Nontypical','Typical']
+Percentage = [47.52,28.38,16.50,7.6]
 
+fig = go.Figure(data=[go.Pie(labels=ChestPainType, values=Percentage, textinfo='label+percent', hole=.3)])
+
+def gender(Sex):
+    if Sex == 0:
+        return "Female"
+    else:
+        return "Male"
+
+df['Gender'] = df['Sex'].apply(gender)
+
+def sl(Slope):
+    if Slope == 1:
+        return "Up-Sloping"
+    elif Slope == 2:
+        return "Flat"
+    else:
+        return "Down-Sloping"
+
+df['New_Slope'] = df['Slope'].apply(sl)
+
+avg_age = df[["Age","Target","Gender"]].groupby(["Age","Gender"], as_index=False).mean()
+
+avg_bp = df[["Age","RestBP","Gender"]].groupby(["Age","Gender"], as_index=False).mean()
+
+avg = df[["Age", "MaxHR", "Sex"]].groupby(['Age','Sex'], as_index=False).mean()
+
+cards = [
+    dbc.Card(
+        [
+            html.H2(f"{df['MaxHR'].mean()}", className="card-title"),
+            html.P("Max HR", className="card-text"),
+        ],
+        body=True,
+        color="dark",
+        inverse=True
+    ),
+    dbc.Card(
+        [
+            html.H2(f"{df['Chol'].mean()}", className="card-title"),
+            html.P("Chol",className="card-text"),
+        ],
+        body=True,
+        color="dark",
+        inverse=True
+    ),
+]
 
 app.layout = html.Div(children=[
-    html.H1(children='Heart Attack Prediction', style={'text-align': 'center'}),
+    html.Div([
+        html.H1(children='Heart Disease Analysis', style={'text-align': 'center'}),
+        html.Div(children='''
+        The path to lead a longer life''',
+                 style={'text-align': 'center'}),
+        dbc.Row([dbc.Col(card) for card in cards]),
 
-    html.Div(children='''
-        The path to lead a longer life
-    ''', style={'text-align': 'center'}),
+        dcc.Graph(id='graph-with-slider',
+                  figure=fig),
+]),
+        html.Div(children=[
+            html.Div(
+                dcc.Graph(
+                    figure= px.scatter(data_frame=df, x="Age", y="Oldpeak", color="New_Slope")
 
-    html.Label('Age'),
-    dcc.RangeSlider(
-        min=df['Age'].min(),
-        max=df['Age'].max(),
-        step=1,
-        value=[df['Age'].min()+5, df['Age'].max()-5]
-    ),
-
-    html.Label('Type of Chest Pain'),
-    dcc.Dropdown(
-        options=[
-            {'label': 'Asymptomatic', 'value': 'Asymptomatic'},
-            {'label': 'Non-Anginal', 'value': 'Nonanginal'},
-            {'label': 'Non-Typical', 'value': 'Nontypical'},
-            {'label': 'Typical', 'value': 'Typical'}
-        ],
-        value=['Asymptomatic','Typical'],
-        multi=True
-    ),
-
-    html.Label('Fasting Blood Sugar (Fbs)'),
-    dcc.Checklist(
-        id='select-all',
-        options=[
-            {'label': 'Fbs < 120 mg/dl', 'value': 0},
-            {'label': 'Fbs > 120 mg/dl', 'value': 1}
-        ],
-        value= [0]
-    ),
-
-    html.Label('Resting Electro Cardio Graphic'),
-    dcc.Dropdown(
-        options=[
-            {'label': 'Normal', 'value': 0},
-            {'label': 'Having ST-T Wave Abnormality', 'value': 1},
-            {'label': 'Showing probable or definite left ventricular hypertrophy by Estes criteria', 'value': 2}
-        ],
-        value=[0,1],
-        multi=True
-    ),
-
-    html.Label('Gender'),
-    dcc.Checklist(id='select-all',
-                  options=[
-                      {'label': 'Male', 'value': 1},
-                      {'label': 'Female', 'value': 0}
-                  ],
-                  value=[0,1]),
-
-    html.Label('Diagnosis of Heart Disease'),
-    dcc.Checklist(id='select-all',
-                  options=[
-                      {'label': '< 50% diameter narrowing', 'value': 0},
-                      {'label': '> 50% diameter narrowing', 'value': 1}
-                  ],
-                  value=[0]),
-
-    html.Label('Thal'),
-    dcc.Dropdown(
-        options=[
-            {'label': 'Normal', 'value': 3},
-            {'label': 'Reversable Defect', 'value': 7},
-            {'label': 'Fixed Defect', 'value': 6}
-        ],
-        value=[3,6],
-        multi=True
-    ),
-
-    html.Label('Number of Blood Vessels'),
-    dcc.RangeSlider(
-        min=df['Ca'].min(),
-        max=df['Ca'].max(),
-        step=1,
-        value=[df['Ca'].min(), df['Ca'].max()]
-    ),
-
-    html.Label('Slope of Peak Exercise'),
-    dcc.Dropdown(
-        options=[
-            {'label': 'Flat', 'value': 2},
-            {'label': 'Up Sloping', 'value': 1},
-            {'label': 'Down Sloping', 'value': 3}
-        ],
-        value=[1,2,3],
-        multi=True
-    ),
-
-    html.Label('Exercise Induced Angina'),
-    dcc.Checklist(id='select-all',
-                  options=[
-                      {'label': 'Yes', 'value': 1},
-                      {'label': 'No', 'value': 0}
-                  ],
-                  value=[1]
-    ),
-
-    dcc.Graph(figure=fig),
+                )
+            )
+        ])
 
 ])
+
 
 if __name__ == '__main__':
     app.run_server(debug=True, host='127.0.0.1')
